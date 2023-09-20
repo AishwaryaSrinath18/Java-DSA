@@ -1,0 +1,15 @@
+class Solution {
+    public int removeDuplicates(int[] nums) {
+       int i=1;
+        for(int j=0;j<nums.length-1;j++){
+            if(nums[j]!=nums[j+1]){
+                nums[i]=nums[j+1];
+                i++;
+            }
+        }
+        return i;
+    }
+}
+//Here we compare the elements and declaring the unique elements in the continuous index
+// 1,1,2,3,3,4
+// in answer array we declare as 1,2,3,4,.... others may be any elements
