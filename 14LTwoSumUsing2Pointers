@@ -1,0 +1,18 @@
+// Using two pointer approach to find the sum of the nubers to target
+// first element in the array is the lower and last element in the array is the higher
+class Solution {
+    public int[] twoSum(int[] numbers, int target) {
+        int[] res=new int[2];
+        int l=0;
+        int h=numbers.length-1;
+        while(numbers[l]+numbers[h]!=target){
+            if(numbers[l]+numbers[h]>target){
+                h--;
+            }
+            else l++;
+        }
+        res[0]=l+1;
+        res[1]=h+1;
+        return res;
+    }
+}
