@@ -1,0 +1,13 @@
+class Solution {
+    public boolean checkPerfectNumber(int num) {
+        if(num==1) return false;
+        int sum=0;
+        for(int i=1;i<=num/2;i++){
+            if(num%i==0){ //Checking the number is a divisor
+                sum=sum+i; //Suming the divisors
+            }
+        }
+        if(sum==num) return true;
+        else return false;
+    }
+}
