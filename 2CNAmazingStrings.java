@@ -1,4 +1,4 @@
-First New method:
+First method(New):
 import java.util.Arrays;
 public class Solution {
 
