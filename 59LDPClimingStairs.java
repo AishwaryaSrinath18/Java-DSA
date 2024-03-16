@@ -15,3 +15,20 @@ class Solution {
         return dp[dp.length -1];
     }
 }
+
+
+// this can also be solved using only one space 
+class Solution {
+    public int climbStairs(int n) {
+        int a = 1;
+        int b = 1;
+        int sum = 0;
+        while(n > 1){
+            sum = sum + a + b;
+            a = b;
+            b = sum;
+            n--;
+        } 
+        return sum;
+    }
+}
