@@ -1,3 +1,7 @@
+// Input:  "leet**cod*e"
+// Output: "lecoe"
+// to remove start and its left most element
+
 class Solution {
     public String removeStars(String s) {
        String removed = "";
